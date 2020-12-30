@@ -21,7 +21,7 @@ while(cap.isOpened()):       #  # OR while(true) or while (1)
 
        font = cv2.FONT_HERSHEY_SIMPLEX
        text = '(Width: '+ str(cap.get(3)) + ' Height:' + str(cap.get(4))+')'
-       datet = str(datetime.datetime.now())
+       datet = str(datetime.datetime.now())     # str to convert integer to string that can be concatenated
        
        frame = cv2.putText(frame, text, (10, 30), font, 0.5,
                            (0, 255, 255), 1, cv2.LINE_AA)
